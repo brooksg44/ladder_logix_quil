@@ -5,8 +5,8 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.11.1"]
                  [quil "4.3.1323"]]
-  :main ladder-logix-quil.core
-  :aot [ladder-logix-quil.core]
+  :main ladder-logix-quil.modified-core
+  :aot [ladder-logix-quil.modified-core]
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all 
+  :profiles {:uberjar {:aot :all
                        :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}})
